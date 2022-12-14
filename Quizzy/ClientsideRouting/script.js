@@ -299,6 +299,10 @@ let renderHome = () => {
 	})
 }
 
+let renderNotFound = () => {
+    PageContent.innerHTML="Page Not Found"
+}
+
 let renderQuiz = () => {
 	previousQuestions = new Array();
 	isAnsweredCorrectly = true;
