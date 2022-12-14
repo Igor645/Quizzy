@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    font-size: 100%; 
+    vertical-align: baseline; 
+    background: transparent;
+    font-family: 'Fredoka', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-family: 'Fredoka', sans-serif;
+    color: white;
+}
+
+body{
+    background-color: royalblue;
+    display: table;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-color: cornflowerblue;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.WebTitle{
+    font-size: xx-large;
+    margin-left: 0;
+}
+
+.Logo{
+    margin-right: 0;
+    width: 5%;
+    color: white;
+}
+
+.WholeTitle{
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+}
+
+.WholeTitle:hover{
+    cursor: pointer;
+    background-color: royalblue;
+    padding: 0.5%;
+}
+
+/*======================Homepage======================*/
+.home-Container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    min-height: 83vh;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.home{
+    border: 0.3em solid royalblue;
+    border-radius: 0.5em;
+    height: 20%;
+    align-self: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.homeButtons{
+    margin-top: 20%;
+    display: flex;
+    align-self: center;
+    font-size: x-large;
+    justify-content: space-around;
+}
+
+.Instruction{
+    font-size: xx-large;
+    color: black;
+    align-self: center;
+}
+
+.homeButton,
+.play,
+.create{
+    padding: 3%;
+    background-color: royalblue;
+    width: fit-content;
+}
+
+.apply:hover,
+.addQuestion:hover,
+.homeButton:hover,
+.play:hover,
+.create:hover{
+    cursor: pointer;
+    background-color: darkblue;
+}
+
+/*======================Quiz======================*/
+
+.Display{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.progressContainer{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin-left: 5vw;
+    align-self: center;
+}
+
+.bar{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Quiz-Container{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin-left: 5vw;
+    background-color: white;
+    height: 100%;
+}
+
+.Question{
+    align-self: center;
+    width: 70%;
+    margin-top: 8vh;
+    height: 27vh;
+    background-color: royalblue;
+    text-align: center;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.AnswerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    align-self: center;
+    gap: 5%;
+    justify-content: space-evenly;
+    margin-bottom: 8vh;
+}
+
+.Answer{
+    background-color: royalblue;
+    width: 45%;
+    vertical-align: middle;
+    height: 22vh;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: x-large;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Answer:hover{
+    cursor: pointer;
+    background-color:darkblue;
+}
+
+/*======================create======================*/
+.usage{
+    color: black;
+    text-align: center;
+    align-self: center;
+    margin: 3%;
+    margin-top: 0;
+}
+
+.errorMessage{
+    color: red;
+    align-self: center;
+    margin-top: 3%;
+}
+
+.apply,
+.addQuestion{
+    background-color: royalblue;
+    color: white;
+    align-self: center;
+    width: 18vw;
+    height: 8vh;
+    margin-top: 5vh;
+}
+
+.apply{
+    width: 10vw;
+    height: 5vh;
+}
+
+.BoxContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.createContainer{
+    border: 0.3em solid royalblue;
+    width: 70%;
+    align-self: center;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nameOfInput{
+    color: black;
+    margin-right: 1vw;
+}
+
+.Input{
+    border: 0.2em solid royalblue;
+    color: black;
+    width: 25vw;
+}
+
+.Input#question{
+    width: 75%;
+}
+
+.inputContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inputContainer#answer{
+    margin-top: 2%;
+    align-self: center;
+}
+
+.answerContainer{
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/*======================toggle-switch logic======================*/
+.bool{
+    margin-right: 2vw;
+    height: 1.5vw;
+    width: 1.5vw;
+}
+/*======================footer======================*/
+
+footer{
+    background-color: cornflowerblue;
+    padding: 3%;
+    display: table-row;
+}
+
+.footer p{
+    margin-left: 1em;
+}
